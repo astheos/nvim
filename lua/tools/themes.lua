@@ -3,7 +3,7 @@
 require('interface')
 require('general')
 
-local path = '/home/theos/.config/nvim/backup/memory.txt'
+local path = eval['stdpath']('data') .. '/memory.txt'
 
 local memory = io.lines(path)
 
